@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DataFragment"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_title4"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/tv_title4"
+            android:textColor="#00C6FF"
+            android:textStyle="bold" />
+
+        <!-- Card confirmed -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_confirmedWorld"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_confirmed"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:text="@string/confirmed"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="italic|bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_confirmed"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/round_public_black_48dp" />
+
+                <TextView
+                    android:id="@+id/tv_confirmedNum"
+                    style="@style/TextAppearance.MaterialComponents.Headline3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_confirmed"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:textStyle="bold"
+                    tools:text="3,517,345" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Card local -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_confirmedLocal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_local"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:text="@string/confirmed_local"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textStyle="italic|bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_local"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/indo" />
+
+                <TextView
+                    android:id="@+id/tv_localNum"
+                    style="@style/TextAppearance.MaterialComponents.Headline3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_local"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:textStyle="bold"
+                    tools:text="12,071" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Card recovered -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_recovered"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_recovered"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:text="@string/recovered_world"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textStyle="italic|bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_recovered"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/health" />
+
+                <TextView
+                    android:id="@+id/tv_recoveredNum"
+                    style="@style/TextAppearance.MaterialComponents.Headline3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_recovered"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:textStyle="bold"
+                    tools:text="1,197,735" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Card death -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_death"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_death"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="8dp"
+                    android:text="@string/death_world"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textStyle="italic|bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_death"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/death" />
+
+                <TextView
+                    android:id="@+id/tv_deathNum"
+                    style="@style/TextAppearance.MaterialComponents.Headline3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_death"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:textStyle="bold"
+                    tools:text="256,928" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.anychart.AnyChartView
+            android:id="@+id/pie_chart"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginBottom="8dp"
+            android:padding="4dp" />
+    </LinearLayout>
+</ScrollView>

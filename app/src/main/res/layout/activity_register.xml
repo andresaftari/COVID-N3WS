@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".account.RegisterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_toolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:id="@+id/tv_appTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/app_name"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_logo"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/background"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_registrationTitle"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/become_member"
+                android:textAlignment="center"
+                android:textColor="#00C6FF"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_registrationTitle"
+                android:layout_marginTop="16dp"
+                android:text="@string/fullname"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edt_fullname"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullname"
+                android:hint="@string/nameHint"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_fullname"
+                android:layout_marginTop="8dp"
+                android:text="@string/username"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username"
+                android:hint="@string/usernameHint"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_username"
+                android:layout_marginTop="8dp"
+                android:text="@string/email"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:hint="@string/emailHint"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/role"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_email"
+                android:layout_marginTop="8dp"
+                android:text="@string/role"
+                android:textAlignment="center"
+                android:textStyle="italic" />
+
+            <RadioGroup
+                android:id="@+id/r_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/role"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rb_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/admin"
+                    android:textSize="20sp"
+                    android:typeface="serif" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rb_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/user"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/r_group"
+                android:layout_marginTop="8dp"
+                android:text="@string/password"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:hint="@string/passHint"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/passVerif"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_password"
+                android:layout_marginTop="8dp"
+                android:text="@string/confirm_password"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edt_passwordVerif"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passVerif"
+                android:hint="@string/confirmHint"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/edt_passwordVerif"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:text="@string/signup"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_goToLogin"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_register"
+                android:text="@string/goToLogin"
+                android:textAlignment="center"
+                android:textColor="#00C6FF" />
+
+            <ProgressBar
+                android:id="@+id/progressBarRegister"
+                style="@android:style/Widget.Material.Light.ProgressBar.Large"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

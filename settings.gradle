@@ -1,0 +1,2 @@
+rootProject.name='COVID-N3WS'
+include ':app'

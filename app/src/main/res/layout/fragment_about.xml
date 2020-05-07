@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".fragment.AboutFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_appversion"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:id="@+id/card_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_app"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/app_name"
+                android:textColor="#00C6FF"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tv_appVer"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_app"
+                android:layout_marginStart="8dp"
+                android:text="@string/version" />
+
+            <TextView
+                android:id="@+id/tv_warning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_appVer"
+                android:layout_marginStart="8dp"
+                android:text="@string/wip"
+                android:textStyle="italic" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_android"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="4dp"
+                android:src="@drawable/round_android_white_48dp"
+                app:civ_circle_background_color="#00C6FF" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_author"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:id="@+id/card_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_author"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/author"
+                android:textAlignment="viewStart"
+                android:textColor="#00C6FF"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tv_authorName"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_author"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/authorName"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_authorEmail"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_authorName"
+                android:layout_marginStart="8dp"
+                android:text="@string/authorEmail" />
+
+            <TextView
+                android:id="@+id/tv_authorContact"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_authorEmail"
+                android:layout_marginStart="8dp"
+                android:text="@string/authorContact" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_face"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="4dp"
+                android:src="@drawable/round_face_white_48dp"
+                app:civ_circle_background_color="#00C6FF" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_resource"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:id="@+id/card_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_credits"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/credits"
+                android:textAlignment="viewStart"
+                android:textColor="#00C6FF"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tv_statistics"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_credits"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/stats" />
+
+            <TextView
+                android:id="@+id/tv_charts"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_statistics"
+                android:layout_marginStart="8dp"
+                android:text="@string/charts" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_donuts"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="4dp"
+                android:src="@drawable/round_donut_small_white_48dp"
+                app:civ_circle_background_color="#00C6FF" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

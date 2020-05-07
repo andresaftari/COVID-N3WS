@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">COVID-N3WS</string>
+
+    <!-- App components -->
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_data">Statistics</string>
+    <string name="title_about">About</string>
+
+    <!-- Report text -->
+    <string name="tv_title">How Dangerous is Coronavirus?</string>
+    <string name="tv_report1">
+        \t\t\tThe coronavirus is an oily membrane packed with genetic instructions to make millions of copies of itself.
+        The instructions are encoded in 30,000 “letters” of RNA — a, c, g and u — which the infected cell reads and
+        translates into many kinds of virus proteins.\n\n\t\t\tIn December, a cluster of mysterious pneumonia cases appeared around a seafood market
+        in Wuhan, China. In early January, researchers sequenced the first genome of a new coronavirus, which they isolated
+        from a man who worked at the market. That first genome became the baseline for scientists to track the SARS-CoV-2 virus as
+        it spreads around the world.</string>
+    <string name="tv_title2">Ability To Hack RNA</string>
+    <string name="tv_report2">
+        \t\t\tThe case started from Wuhan, China. This virus has the ability to "hack" the infected cell so it will created "typo" on creating RNA and helps the virus incubated.
+        A cell infected by a coronavirus releases millions of new viruses, all carrying copies of the original genome.\n\n\t\t\tAs the cell copies that genome, it sometimes makes mistakes,
+        usually just a single wrong letter. These typos are called mutations. As coronaviruses spread from person to person, they randomly accumulate more mutations. The genome below came from another
+        early patient in Wuhan and was identical to the first case, except for one mutation. The 186th letter of RNA was U instead of C.
+    </string>
+    <string name="tv_title3">A Slow-Mutating Virus</string>
+    <string name="tv_report3">
+        \t\t\tAt this point in the pandemic, coronavirus genomes with 10 or fewer mutations are common, and only a small number have over 20 mutations — which is still less
+        than a tenth of a percent of the genome. Over time, viruses can evolve into new strains — in other words, viral lineages that are significantly different from each other.
+        \n\n\t\t\tSince January, researchers have sequenced many thousands of SARS-CoV-2 genomes and tracked all the mutations that have arisen.
+        So far, they haven’t found compelling evidence that the mutations have had a significant change in how the virus affects us.
+    </string>
+    <string name="tv_title4">Graphical from Google COVID-19 Outbreak confirmed reports</string>
+
+    <!-- Graphical reports -->
+    <string name="confirmed">CONFIRMED CASES (WORLD)</string>
+    <string name="confirmed_local">CONFIRMED CASES (LOCAL)</string>
+    <string name="recovered_world">RECOVERED (WORLD)</string>
+    <string name="death_world">DEATH (WORLD)</string>
+
+    <!-- Image desc -->
+    <string name="gen1desc">Genome_1</string>
+    <string name="caption_gen1">A genome of Wuhan (WH-01) nCOV-19 RNA, start from the left to the right, collected on December 26th.</string>
+    <string name="map1desc">Map_1</string>
+    <string name="caption_map1">Wuhan, China. Source of the very first case.</string>
+    <string name="map2desc">Map_2</string>
+    <string name="caption_map2">All tracked genome mutation around the world</string>
+    <string name="gen2desc">Genome_2</string>
+    <string name="caption_gen2">WH-09 RNA code changes for 186th code, from C to U. Collected on January 8th, Wuhan.</string>
+    <string name="gen3desc">Genome_3</string>
+    <string name="caption_gen3">Genome VIC995, collected on March 31 from a woman in Victoria, Australia</string>
+
+    <!-- Profile -->
+    <string name="become_member">Become a subscriber now!</string>
+    <string name="fullname">Fullname :</string>
+    <string name="nameHint">Enter your fullname</string>
+    <string name="username">Username :</string>
+    <string name="usernameHint">Enter your username</string>
+    <string name="email">Email :</string>
+    <string name="emailHint">Enter your email</string>
+    <string name="role">Role :</string>
+    <string name="admin">Be an Administrator!</string>
+    <string name="user">Just a User</string>
+    <string name="passHint">Enter your password</string>
+    <string name="password">Password :</string>
+    <string name="confirmHint">Confirm your password</string>
+    <string name="confirm_password">Confirm Password :</string>
+    <string name="signup">SIGNUP</string>
+    <string name="goToLogin">Already a member? Login here!</string>
+    <string name="profileName">Member</string>
+    <string name="profileRole">Member role</string>
+    <string name="join">Join us! Become a subscriber!</string>
+    <string name="register">Register!</string>
+    <string name="login">Login</string>
+    <string name="btnProfile">Edit Profile</string>
+    <string name="btnAdmin">ADMINISTRATOR ZONE</string>
+    <string name="btnLogout">LOGOUT</string>
+    <string name="login_account">Login with your account!</string>
+    <string name="goToRegister">Not a member? Click here to register your account!</string>
+    <string name="forgot">Forgot Password</string>
+
+    <!-- Edit profile -->
+    <string name="nameEditHint">Edit your fullname here</string>
+    <string name="usernameEditHint">Edit your username here</string>
+    <string name="emailEditHint">Edit your email here</string>
+    <string name="rbuser">User</string>
+    <string name="rbadmin">Administrator</string>
+    <string name="confirm_edit">EDIT MY PROFILE!</string>
+    <string name="editTitle">User Profile Edit</string>
+    <string name="editHint">Just fill the data you want to edit :)</string>
+
+    <!-- About -->
+    <string name="version">Version alpha-1.0</string>
+    <string name="wip">This app still under development</string>
+    <string name="author">AUTHOR</string>
+    <string name="authorName">Prasidya Pramadresana Saftari</string>
+    <string name="authorEmail">andresaftari@gmail.com</string>
+    <string name="authorContact">(+62)838-7099-2897</string>
+    <string name="credits">CREDITS</string>
+    <string name="stats">COVID-19 Statistics from Google News</string>
+    <string name="charts">Chart styling from AnyChart</string>
+    <string name="splash_desc">splash_desc</string>
+</resources>
